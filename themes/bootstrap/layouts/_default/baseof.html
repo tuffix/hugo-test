@@ -5,8 +5,10 @@
         <div class ="container-sm" >
             {{- partial "header.html" . -}}
             {{- partial "nav.html" . -}}
-        <main>
-        {{- block "main" . }}{{- end }}
+            <main class="row">
+                <div class="col">
+                    {{- block "main" . }}{{- end }}
+                </div>
         </main>
         {{- partial "footer.html" . -}}
         </div>
